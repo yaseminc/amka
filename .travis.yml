@@ -3,5 +3,12 @@ node_js:
   - "0.10"
 env:
   - NODE_ENV=travis
+install:
+  - bundle install
+  - bower install
+cache:
+  bundler: true
+  directories:
+    - node_modules
 services:
   - mongodb
