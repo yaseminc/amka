@@ -9,6 +9,7 @@ script:
  - "grunt build"
 deploy:
   provider: heroku
+  skip_cleanup: true
   api_key:
     secure: hmhoeWTtD2NbEf2WFL8B2xF8ajScwGgpcqIVAr7Xfuj7AjxR9LYL2n4J2khEJkHfJ9grc3Xb3O4L4KRPoyth4cqCYinmIIAVLXekD0lGUEusJbiLjA/JwRCcGPRmrM2eJkQ2Lh0ePAq0A98S/4n+5m1aghd+/1ijuE76w4pDZAc=
   app: amka2015
