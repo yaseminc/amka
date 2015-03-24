@@ -5,6 +5,8 @@ env:
 - NODE_ENV=travis
 services:
 - mongodb
+script:
+ - "grunt build"
 deploy:
   provider: heroku
   api_key:
