@@ -3,5 +3,9 @@ node_js:
   - "0.10"
 env:
   - NODE_ENV=travis
+cache:
+  bundler: true
+  directories:
+    - node_modules
 services:
   - mongodb
