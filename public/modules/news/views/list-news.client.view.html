@@ -13,7 +13,7 @@
 			</small>
         </a>
     </div>
-    <div class="alert alert-warning text-center" data-ng-hide="!news.$resolved || news.length">
+    <div class="alert alert-warning text-center" data-ng-hide="!news.$resolved || news.length || authentication.user ">
     	No News yet, why don't you <a href="/#!/news/create">create some</a>?
     </div>
 </section>
