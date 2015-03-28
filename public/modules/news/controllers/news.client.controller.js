@@ -1,9 +1,11 @@
 'use strict';
 
 // News controller
-angular.module('news').controller('NewsController', ['$scope', '$stateParams', '$location', 'Authentication', 'News',
-	function($scope, $stateParams, $location, Authentication, News) {
+angular.module('news').controller('NewsController', ['$scope', '$stateParams', '$location', 'Authentication', 'News', '$state',
+	function($scope, $stateParams, $location, Authentication, News, $state) {
 		$scope.authentication = Authentication;
+
+        if (!$scope.user && $state.current.name !== 'listNews') $location.path('/signin');
 
 		// Create new News
 		$scope.create = function() {
