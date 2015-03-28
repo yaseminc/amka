@@ -5,6 +5,10 @@ angular.module('about').config(['$stateProvider',
 	function($stateProvider) {
 		// About state routing
 		$stateProvider.
+		state('about-us', {
+			url: '/about-us',
+			templateUrl: 'modules/about/views/about-us.client.view.html'
+		}).
 		state('rules-forms', {
 			url: '/rules-forms',
 			templateUrl: 'modules/about/views/rules-forms.client.view.html'
