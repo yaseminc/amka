@@ -1,5 +1,15 @@
-.content {
-	margin-top: 50px;
+.wrap {
+    height: 100%;
+    font-family: "Helvetic Neue", Helvetica, Arial;
+    font-size: 18px;
+    line-height: 1.428571429;
+    color: #fff;
+    min-height: 100%;
+    height: auto;
+    /* Negative indent footer by its height */
+    margin: 0 auto -50px;
+    /* Pad bottom by footer height */
+    padding: 0 0 50px;
 }
 .undecorated-link:hover {
 	text-decoration: none;
@@ -12,4 +22,32 @@
 }
 .ng-valid.ng-dirty {
 	border-color: #78FA89;
+}
+.footer {
+    height: 25px;
+}
+.one {
+height: 500px;
+}
+.two {
+    background: #064E9F;
+    padding: 75px;
+    height: 500px;
+}
+.three {
+    padding: 75px;
+    background:  #2780e3;
+    height: 500px;
+}
+.four {
+    line-height: 1.428571429;
+    font-family: "Helvetic Neue", Helvetica, Arial;
+    padding: 25px;
+    background: #333333;
+    color: #fff;
+}
+.jumbotron {
+    margin-bottom: 0 !important;
+    height:100%;
+    background: #77AFED;
 }
