@@ -5,7 +5,9 @@ angular.module('news').controller('NewsController', ['$scope', '$stateParams', '
 	function($scope, $stateParams, $location, Authentication, News, $state) {
 		$scope.authentication = Authentication;
 
-        if (!$scope.user && $state.current.name !== 'listNews') $location.path('/signin');
+        if ($state.current.name !== 'listNews' && !(Authentication.user && Authentication.user.roles.indexOf('admin') > 0)) {
+            $location.path('/signin');
+        }
 
 		// Create new News
 		$scope.create = function() {
