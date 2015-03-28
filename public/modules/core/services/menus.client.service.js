@@ -8,7 +8,7 @@ angular.module('core').service('Menus', [
 		this.defaultRoles = ['*'];
 
 		// Define the menus object
-		this.menus = {};
+            this.menus = {};
 
 		// A private function for rendering decision 
 		var shouldRender = function(user) {
