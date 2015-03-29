@@ -1,8 +1,5 @@
 .wrap {
     height: 100%;
-    font-family: "Helvetic Neue", Helvetica, Arial;
-    font-size: 18px;
-    line-height: 1.428571429;
     min-height: 100%;
     height: auto;
     /* Negative indent footer by its height */
@@ -26,12 +23,13 @@
     height: 25px;
 }
 .one {
-height: 500px;
+    height: 500px;
 }
 .two {
     background: #064E9F;
     padding: 75px;
     height: 500px;
+    color: #fff;
 }
 .three {
     padding: 75px;
@@ -39,8 +37,6 @@ height: 500px;
     height: 500px;
 }
 .four {
-    line-height: 1.428571429;
-    font-family: "Helvetic Neue", Helvetica, Arial;
     padding: 25px;
     background: #333333;
     color: #fff;
@@ -49,4 +45,13 @@ height: 500px;
     margin-bottom: 0 !important;
     height:100%;
     background: #77AFED;
+}
+.content-dark {
+    color: #fff;
+    font-family: "Helvetic Neue", Helvetica, Arial;
+    font-size: 18px;
+    line-height: 1.428571429;
+}
+.content-dark a {
+    color: #FF8746;
 }
