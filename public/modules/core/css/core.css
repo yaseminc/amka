@@ -23,7 +23,7 @@
     height: 25px;
 }
 .one {
-    height: 500px;
+
 }
 .two {
     background: #064E9F;
@@ -33,18 +33,23 @@
 }
 .three {
     padding: 75px;
-    background:  #2780e3;
-    height: 500px;
+    background:  #77AFED;
 }
 .four {
-    padding: 25px;
+    padding: 50px;
+    background: #333333;
+    color: #fff;
+}
+.five {
+    padding: 50px;
     background: #333333;
     color: #fff;
 }
 .jumbotron {
     margin-bottom: 0 !important;
     height:100%;
-    background: #77AFED;
+    background: linear-gradient(to bottom, rgba(45, 130, 224, 1) 0px, rgba(0, 0, 0, 0.25) 200px), url("../img/bg.JPG")  no-repeat center center;
+    background-size: cover;
 }
 .content-dark {
     color: #fff;
@@ -53,5 +58,9 @@
     line-height: 1.428571429;
 }
 .content-dark a {
-    color: #FF8746;
+    color: #fff  ;
+}
+.navbar-inverse {
+    background-color: #2780e3;
+    border-color: #2780e3;
 }
