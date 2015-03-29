@@ -9,6 +9,17 @@ angular.module('news').controller('NewsController', ['$scope', '$stateParams', '
             $location.path('/signin');
         }
 
+        $scope.froalaOptions = {
+            inlineMode: false,
+            theme: 'dark',
+            minHeight: 200,
+            buttons: [ 'bold', 'italic', 'underline', 'strikeThrough', 'subscript', 'superscript', 'fontFamily',
+                'fontSize', 'color', 'formatBlock', 'blockStyle', 'align', 'insertOrderedList',
+                'insertUnorderedList', 'outdent', 'indent', 'selectAll', 'createLink',
+                'undo', 'removeFormat', 'redo', 'insertHorizontalRule', 'table'
+            ]
+        };
+
 		// Create new News
 		$scope.create = function() {
 			// Create new News object
