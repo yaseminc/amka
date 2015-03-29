@@ -3,6 +3,7 @@
     <div class="jumbotron">
       <h1>AMKA</h1>
       <p>Atlantic Motorsport Karters Association</p>
+      <p><a class="btn btn-primary btn-lg">Learn more</a></p>
     </div>
   </div>
   <div class="row two">
@@ -10,7 +11,7 @@
       <h3>News</h3>
       <hr>
       <div class="list-group">
-        <a data-ng-repeat="news in news" data-ng-href="#!/news/{{news._id}}">
+        <a data-ng-repeat="news in news" data-ng-href="#!/news">
           <h4 class="list-group-item-heading" data-ng-bind="news.title"></h4>
           <small class="list-group-item-text">
             Posted on
@@ -35,5 +36,4 @@
       <h1>About</h1>
     </div>
   </div>
-
 </section>
