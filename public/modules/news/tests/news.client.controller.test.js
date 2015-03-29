@@ -51,13 +51,10 @@
 		}));
 
 		it('$scope.find() should create an array with at least one News object fetched from XHR', inject(function(News) {
-			// Create sample News using the News service
-			var sampleNews = new News({
-				name: 'New News'
-			});
-
-			// Create a sample News array that includes the new News
-			var sampleNews = [sampleNews];
+			// Create a sample News array using the News service
+			var sampleNews = [new News({
+				name : 'New News'
+			})];
 
 			// Set GET response
 			$httpBackend.expectGET('news').respond(sampleNews);
